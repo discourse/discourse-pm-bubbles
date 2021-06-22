@@ -1,0 +1,53 @@
+.archetype-private_message {
+  .topic-body .cooked {
+    margin-left: 0;
+    padding: 1.5em 1em;
+    margin-top: 0.5em;
+  }
+  .topic-avatar {
+    margin-bottom: -1em;
+  }
+  .boxed .contents {
+    padding: 0;
+  }
+
+  .topic-post {
+    margin: 0 0 1em;
+    article {
+      border-top: none;
+    }
+  }
+
+  .topic-body {
+    flex: 1 1 auto;
+    margin-left: 0.5em;
+  }
+
+  .topic-meta-data {
+    margin-left: 34px;
+  }
+
+  .topic-map {
+    padding: 1em 0.5em;
+    margin-left: 0;
+  }
+
+  .post-notice {
+    padding: 1em;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+
+  .small-action {
+    margin-left: 0;
+  }
+
+  .small-action-desc.timegap {
+    margin-left: 0;
+    padding-left: 1.7em;
+  }
+
+  .small-action:not(.time-gap) {
+    padding: 1em;
+  }
+}
