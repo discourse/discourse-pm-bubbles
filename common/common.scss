@@ -1,19 +1,10 @@
 .archetype-private_message {
-  @keyframes background-fade-highlight {
-    0% {
-      background-color: var(--tertiary-low);
-    }
-    100% {
-      background-color: var(--primary-very-low);
-    }
-  }
-
   @keyframes my-background-fade-highlight {
     0% {
       background-color: var(--primary-very-low);
     }
     100% {
-      background-color: var(--tertiary-low);
+      background-color: var(--secondary);
     }
   }
 
