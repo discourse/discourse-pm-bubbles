@@ -1,11 +1,13 @@
 .archetype-private_message {
+  --border-radius: 30px;
+
   @keyframes my-background-fade-highlight {
     0% {
       background-color: var(--secondary);
       border-color: var(--primary-low);
     }
     100% {
-      background-color: var(--tertiary-low);
+      background-color: var(--primary-very-low);
       border-color: transparent;
     }
   }
@@ -15,14 +17,20 @@
     margin-left: -1.35em;
     padding: 2em 2em 1em 2em;
     box-sizing: border-box;
-    border-radius: 0 30px 30px 30px;
+    border-radius: 0 var(--border-radius) var(--border-radius)
+      var(--border-radius);
     margin-top: 0.25em;
   }
 
   .my-post {
     .topic-body .cooked {
       border: 1px solid transparent;
-      background: var(--tertiary-low);
+      background: var(--primary-very-low);
+      aside {
+        --primary-very-low: var(--primary-low);
+        --blend-primary-secondary-5: var(--primary-low);
+        --primary-low: var(--primary-low-mid);
+      }
     }
     .topic-body.highlighted {
       .cooked {
@@ -41,11 +49,6 @@
     .topic-body .cooked {
       background: transparent;
       border: 2px dashed var(--primary-low);
-    }
-    &.my-post {
-      .topic-body .cooked {
-        border-color: var(--tertiary-low);
-      }
     }
   }
 
@@ -96,7 +99,7 @@
     margin-bottom: 1em;
     border: none;
     background: var(--primary-very-low);
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     margin-left: 1.5em;
     box-sizing: border-box;
     padding: 1.5em 2em;
@@ -105,7 +108,7 @@
   .topic-map {
     margin-left: -1.5em;
     border: none;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     padding: 2em 1.5em;
 
     section {
@@ -123,14 +126,14 @@
         border: none;
         background: var(--primary-low);
         padding: 2px 4px;
-        border-radius: 30px;
+        border-radius: var(--border-radius);
       }
     }
   }
 
   .map:first-of-type .buttons .btn {
     border: none;
-    border-radius: 30px;
+    border-radius: var(--border-radius);
   }
 
   .embedded-posts {
