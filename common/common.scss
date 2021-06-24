@@ -4,11 +4,9 @@
   @keyframes my-background-fade-highlight {
     0% {
       background-color: var(--secondary);
-      border-color: var(--primary-low);
     }
     100% {
       background-color: var(--primary-very-low);
-      border-color: transparent;
     }
   }
 
@@ -25,7 +23,6 @@
   .my-post {
     .topic-body .cooked {
       background: var(--primary-very-low);
-      border: 1px solid transparent;
       aside.quote {
         .title,
         blockquote {
@@ -35,6 +32,9 @@
       }
       aside.onebox {
         background: var(--primary-very-low);
+      }
+      pre code {
+        background: var(--primary-low);
       }
     }
     .topic-body.highlighted {
