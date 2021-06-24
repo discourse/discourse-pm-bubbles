@@ -26,14 +26,15 @@
     .topic-body .cooked {
       background: var(--primary-very-low);
       border: 1px solid transparent;
-      aside,
-      blockquote,
-      table,
-      .onebox,
-      .mention {
-        --primary-very-low: var(--primary-low);
-        --blend-primary-secondary-5: var(--primary-low);
-        --primary-low: var(--primary-low-mid);
+      aside.quote {
+        .title,
+        blockquote {
+          background: var(–-primary-low);
+          border-color: var(--primary-low-mid);
+        }
+      }
+      aside.onebox {
+        background: var(--primary-very-low);
       }
     }
     .topic-body.highlighted {
