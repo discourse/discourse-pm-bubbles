@@ -24,11 +24,12 @@
 
   .my-post {
     .topic-body .cooked {
+      background: var(--primary-very-low);
+
       --primary-very-low: var(--primary-low);
       --blend-primary-secondary-5: var(--primary-low);
       --primary-low: var(--primary-low-mid);
       border: 1px solid transparent;
-      background: var(--primary-very-low);
     }
     .topic-body.highlighted {
       .cooked {
