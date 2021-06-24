@@ -25,11 +25,16 @@
   .my-post {
     .topic-body .cooked {
       background: var(--primary-very-low);
-
-      --primary-very-low: var(--primary-low);
-      --blend-primary-secondary-5: var(--primary-low);
-      --primary-low: var(--primary-low-mid);
       border: 1px solid transparent;
+      aside,
+      blockquote,
+      table,
+      .onebox,
+      .mention {
+        --primary-very-low: var(--primary-low);
+        --blend-primary-secondary-5: var(--primary-low);
+        --primary-low: var(--primary-low-mid);
+      }
     }
     .topic-body.highlighted {
       .cooked {
