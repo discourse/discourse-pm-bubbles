@@ -51,3 +51,12 @@
     padding: 1em;
   }
 }
+
+// Mobile PM Fix for staff
+.topic-meta-data .names .first.staff {
+  flex-basis: 100%;
+  & + .second,
+  & + .second + .user-title {
+    flex-basis: unset;
+  }
+}
