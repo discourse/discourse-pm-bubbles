@@ -15,7 +15,7 @@
   .topic-body .cooked {
     border: 1px solid var(--primary-low);
     margin-left: -1.35em;
-    padding: 2em 2em 1em 2em;
+    padding: 1.5em 1.5em 0.5em 1.5em;
     box-sizing: border-box;
     border-radius: 0 var(--border-radius) var(--border-radius)
       var(--border-radius);
@@ -71,10 +71,6 @@
     .cooked {
       animation: background-fade-highlight 2.5s ease-out;
     }
-  }
-
-  .topic-post {
-    margin: 1em 0;
   }
 
   .topic-avatar,
