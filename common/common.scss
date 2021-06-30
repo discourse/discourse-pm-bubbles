@@ -3,10 +3,12 @@
 
   @keyframes my-background-fade-highlight {
     0% {
-      background-color: var(--tertiary-low);
+      background-color: var(--secondary);
+      border-color: var(--primary-low);
     }
     100% {
-      background-color: var(--primary-very-low);
+      background-color: var(--tertiary-low);
+      border-color: transparent;
     }
   }
 
@@ -22,7 +24,8 @@
 
   .my-post {
     .topic-body .cooked {
-      background: var(--primary-very-low);
+      border: 1px solid transparent;
+      background: var(--tertiary-low);
       aside.quote {
         .title,
         blockquote {
@@ -35,6 +38,12 @@
       }
       pre code {
         background: var(--primary-low);
+      }
+      table tr {
+        border-bottom: 1px solid var(--primary-low-mid);
+      }
+      table tbody {
+        border-top: 3px solid var(--primary-low-mid);
       }
     }
     .topic-body.highlighted {
