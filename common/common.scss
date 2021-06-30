@@ -29,25 +29,28 @@
       aside.quote {
         .title,
         blockquote {
-          background: var(–-primary-low);
-          border-color: var(--primary-low-mid);
+          // background: var(–-primary-low);
+          // border-color: var(--primary-low-mid);
+          background-color: rgba(var(--primary-rgb),0.05);
+          border-color: rgba(var(--primary-rgb),0.10);
         }
       }
       aside.onebox {
-        background: var(--primary-very-low);
+        background: rgba(var(--secondary-rgb),0.75);
+        border-color: rgba(var(--primary-rgb),0.10);
       }
       pre code {
         background: var(--primary-low);
       }
       table tr {
-        border-bottom: 1px solid var(--primary-low-mid);
+        border-bottom: 1px solid rgba(var(--primary-rgb),0.20);
       }
       table tbody {
-        border-top: 3px solid var(--primary-low-mid);
+        border-top: 3px solid rgba(var(--primary-rgb),0.20);
       }
       a.mention {
-        background-color: var(--tertiary-medium);
-        color: var(--tertiary-hover);
+        background-color: rgba(var(--primary-rgb),0.15);
+        color: rgba(var(--primary-rgb),0.85);
       }
     }
     .topic-body.highlighted {
