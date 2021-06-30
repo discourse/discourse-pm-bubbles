@@ -45,6 +45,10 @@
       table tbody {
         border-top: 3px solid var(--primary-low-mid);
       }
+      a.mention {
+        background-color: var(--tertiary-medium);
+        color: var(--tertiary-hover);
+      }
     }
     .topic-body.highlighted {
       .cooked {
