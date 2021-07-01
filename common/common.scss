@@ -64,6 +64,10 @@
       background: transparent;
       border: 2px dashed var(--primary-low);
     }
+
+    &.my-post .topic-body .cooked {
+      border: 2px dashed rgba(var(--tertiary-rgb),0.35);
+    }
   }
 
   .topic-body.highlighted {
