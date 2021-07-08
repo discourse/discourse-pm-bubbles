@@ -9,6 +9,7 @@
   }
   .boxed .contents {
     padding: 0;
+    top: -2px;
   }
 
   .topic-post {
@@ -19,8 +20,7 @@
   }
 
   .topic-body {
-    flex: 1 1 auto;
-    margin-left: 0.5em;
+    flex: 1 1 auto; 
   }
 
   .topic-meta-data {

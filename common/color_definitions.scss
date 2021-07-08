@@ -1,0 +1,6 @@
+
+$tertiary-very-low: dark-light-diff($tertiary, $secondary, 90%, -75%) !default;
+
+:root {
+  --tertiary-very-low: #{$tertiary-very-low};
+}

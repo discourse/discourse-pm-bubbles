@@ -7,7 +7,7 @@
       border-color: var(--primary-low);
     }
     100% {
-      background-color: var(--tertiary-low);
+      background-color: var(--tertiary-very-low);
       border-color: transparent;
     }
   }
@@ -25,7 +25,7 @@
   .my-post {
     .topic-body .cooked {
       border: 1px solid transparent;
-      background: var(--tertiary-low);
+      background: var(--tertiary-very-low);
       aside.quote {
         .title,
         blockquote {
