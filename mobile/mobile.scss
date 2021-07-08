@@ -3,13 +3,14 @@
     margin-left: 0;
     padding: 1.5em 1em;
     margin-top: 0.5em;
+    border-radius: 10px var(--border-radius) var(--border-radius)
+    var(--border-radius);
   }
   .topic-avatar {
     margin-bottom: -1em;
   }
   .boxed .contents {
     padding: 0;
-    top: -2px;
   }
 
   .topic-post {
