@@ -22,7 +22,7 @@
     margin-top: 0.25em;
   }
 
-  .my-post {
+  .my-post:not(.deleted) {
     .topic-body .cooked {
       border: 1px solid transparent;
       background: var(--tertiary-very-low);
