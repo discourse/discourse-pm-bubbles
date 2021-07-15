@@ -86,11 +86,6 @@
     margin-top: 0.5em;
   }
 
-  // .small-action {
-  //   margin-left: 1.5em;
-  //   max-width: calc(758px - 1.5em);
-  // }
-
   .small-action-desc.timegap {
     margin-top: -1.75em;
     flex: 0 0 auto;
@@ -100,16 +95,6 @@
     margin-left: 1.5em;
     max-width: calc(758px - 1.5em);
   }
-
-  // .small-action:not(.time-gap) {
-  //   border: none;
-  //   background: var(--primary-very-low);
-  //   margin-top: 1.5em;
-  //   margin-bottom: 2em;
-  //   border-radius: 30px;
-  //   padding: 0.25em 1em 0 1em;
-  //   box-sizing: border-box;
-  // }
 
   .post-notice {
     margin-bottom: 1em;
@@ -176,4 +161,38 @@
 
 .gap {
   margin-bottom: 2em;
+}
+
+.deleted .topic-body {
+  background-color: transparent;
+  .cooked {
+    background-color: var(--danger-low-mid);
+    border-color: var(--danger-medium);
+  }
+  .username a,
+  .topic-meta-data .post-info a {
+    color: var(--danger-medium);
+  }
+  .actions {
+    button.create {
+      color: var(--danger-hover);
+      .d-icon {
+        color: var(--danger-hover);
+      }
+    }
+    .widget-button {
+      &:hover {
+        background-color: var(--danger-low);
+        .d-icon {
+          color: var(--danger);
+        }
+      }
+    }
+    .d-icon {
+      color: var(--danger-medium);
+    }
+  }
+  .post-action {
+    color: var(--danger-medium);
+  }
 }
