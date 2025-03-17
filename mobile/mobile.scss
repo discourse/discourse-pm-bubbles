@@ -6,15 +6,18 @@
     border-radius: 10px var(--border-radius) var(--border-radius)
       var(--border-radius);
   }
+
   .topic-avatar {
     margin-bottom: -1em;
   }
+
   .boxed .contents {
     padding: 0;
   }
 
   .topic-post {
     margin: 0 0 1em;
+
     article {
       border-top: none;
     }
@@ -57,6 +60,7 @@
 .mobile-view {
   .topic-meta-data .names .first.staff {
     flex-basis: 100%;
+
     & + .second,
     & + .second + .user-title {
       flex-basis: unset;

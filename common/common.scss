@@ -6,6 +6,7 @@
       background-color: var(--secondary);
       border-color: var(--primary-low);
     }
+
     100% {
       background-color: var(--tertiary-very-low);
       border-color: transparent;
@@ -26,6 +27,7 @@
     .topic-body .cooked {
       border: 1px solid transparent;
       background: var(--tertiary-very-low);
+
       aside.quote {
         .title,
         blockquote {
@@ -33,24 +35,30 @@
           border-color: var(--primary-low-mid);
         }
       }
+
       aside.onebox {
         background: var(--primary-very-low);
       }
+
       pre code {
         background: var(--primary-low);
       }
+
       table tr {
         border-bottom: 1px solid var(--primary-low-mid);
       }
+
       table tbody {
         border-top: 3px solid var(--primary-low-mid);
       }
     }
+
     .topic-body.highlighted {
       .cooked {
         animation: my-background-fade-highlight 2.5s ease-out;
       }
     }
+
     .embedded-posts {
       .topic-body .cooked {
         border: 1px solid var(--primary-low);
@@ -72,6 +80,7 @@
 
   .topic-body.highlighted {
     animation: none;
+
     .cooked {
       animation: background-fade-highlight 2.5s ease-out;
     }
@@ -90,7 +99,6 @@
     margin-top: -1.75em;
     flex: 0 0 auto;
     padding: 1em;
-    margin-left: -3em;
     background: var(--secondary);
     margin-left: 1.5em;
     max-width: calc(758px - 1.5em);
@@ -115,6 +123,7 @@
     section {
       border: none;
     }
+
     .map:not(.map-collapsed) {
       .avatars {
         margin: 0.5em 0;
@@ -123,6 +132,7 @@
 
     .participants {
       margin-bottom: 1.5em;
+
       .user {
         border: none;
         background: var(--primary-low);
@@ -139,13 +149,16 @@
 
   .embedded-posts {
     border: none;
+
     .topic-body {
       overflow: visible;
     }
+
     .topic-body,
     .topic-avatar {
       border: none !important; // overrides some specificity for .bottom
     }
+
     .collapse-down,
     .collapse-up {
       display: none;
@@ -165,33 +178,41 @@
 
 .deleted .topic-body {
   background-color: transparent;
+
   .cooked {
     background-color: var(--danger-low-mid);
     border-color: var(--danger-medium);
   }
+
   .username a,
   .topic-meta-data .post-info a {
     color: var(--danger-medium);
   }
+
   .actions {
     button.create {
       color: var(--danger-hover);
+
       .d-icon {
         color: var(--danger-hover);
       }
     }
+
     .widget-button {
       &:hover {
         background-color: var(--danger-low);
+
         .d-icon {
           color: var(--danger);
         }
       }
     }
+
     .d-icon {
       color: var(--danger-medium);
     }
   }
+
   .post-action {
     color: var(--danger-medium);
   }
